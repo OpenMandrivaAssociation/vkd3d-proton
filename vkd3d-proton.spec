@@ -41,6 +41,7 @@ BuildRequires:	cross-i686-w64-mingw32-gcc
 Provides:	direct3d12-implementation
 # For dxgi
 Requires:	direct3d-implementation
+BuildRequires:	dxvk
 Recommends:	dxvk
 
 %description
