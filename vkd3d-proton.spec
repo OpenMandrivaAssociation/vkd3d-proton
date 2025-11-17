@@ -32,9 +32,15 @@ BuildRequires:	pkgconfig(xcb-keysyms)
 BuildRequires:	pkgconfig(xcb-icccm)
 # For widl
 BuildRequires:	mingw
+BuildRequires:	cross-x86_64-w64-mingw32-binutils
+BuildRequires:	cross-x86_64-w64-mingw32-gcc
+BuildRequires:	cross-i686-w64-mingw32-binutils
+BuildRequires:	cross-i686-w64-mingw32-gcc
 
-Recommends:	dxvk
 Provides:	direct3d12-implementation
+# For dxgi
+Requires:	direct3d-implementation
+Recommends:	dxvk
 
 %description
 The vkd3d project includes libraries, shaders, utilities, and demos for
