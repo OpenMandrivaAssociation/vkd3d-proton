@@ -35,8 +35,10 @@ BuildRequires:	pkgconfig(xcb-icccm)
 BuildRequires:	mingw
 BuildRequires:	cross-x86_64-w64-mingw32-binutils
 BuildRequires:	cross-x86_64-w64-mingw32-gcc
+BuildRequires:	cross-x86_64-w64-mingw32-libc
 BuildRequires:	cross-i686-w64-mingw32-binutils
 BuildRequires:	cross-i686-w64-mingw32-gcc
+BuildRequires:	cross-i686-w64-mingw32-libc
 
 Provides:	direct3d12-implementation
 # For dxgi
