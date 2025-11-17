@@ -23,6 +23,7 @@ BuildRequires:  bison
 BuildRequires:  flex
 BuildRequires:  perl-JSON
 BuildRequires:  perl-open
+BuildRequires:	glslang
 BuildRequires:	pkgconfig(xcb)
 BuildRequires:	spirv-headers
 BuildRequires:	pkgconfig(SPIRV-Tools)
