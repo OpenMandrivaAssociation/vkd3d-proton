@@ -80,9 +80,11 @@ ln -s ../../../../../khronos/SPIRV-Headers spirv_headers
 
 %conf
 %meson \
+	-Denable_extended_emulation=true \
 	--cross-file=build-win64.txt
 
 %meson32 \
+	-Denable_extended_emulation=true \
 	--cross-file=build-win32.txt
 
 %build
