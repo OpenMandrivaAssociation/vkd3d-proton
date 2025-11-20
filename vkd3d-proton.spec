@@ -1,4 +1,5 @@
 %global optflags %{optflags} -fno-strict-aliasing
+%define _disable_lto 1
 
 Name:		vkd3d-proton
 Version:	3.0
