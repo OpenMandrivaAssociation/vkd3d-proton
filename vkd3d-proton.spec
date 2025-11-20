@@ -89,6 +89,10 @@ ln -s ../../../../../khronos/SPIRV-Headers spirv_headers
 	--cross-file=build-win32.txt
 
 %build
+export CFLAGS="-O2 -fno-lto -fno-fat-lto-objects"
+export CXXFLAGS="-O2 -fno-lto -fno-fat-lto-objects"
+export LDFLAGS="-Wl,--no-lto -fno-lto"
+
 %ninja_build -C build
 
 %ninja_build -C build32
